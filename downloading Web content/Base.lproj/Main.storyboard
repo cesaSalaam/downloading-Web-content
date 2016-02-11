@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="downloading_Web_content" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uas-IW-sAs">
+                                <rect key="frame" x="0.0" y="110" width="414" height="582"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KS5-Yq-AOO">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="erw-mQ-dpQ"/>
+                                    <constraint firstAttribute="width" constant="414" id="qxL-Jc-N6y"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="YOU-Xp-87d"/>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0tp-hV-5IQ">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="NpC-Yb-b9p"/>
+                                    <constraint firstAttribute="height" constant="44" id="iZ3-Yn-HtZ"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Item" id="jsY-7H-GmQ"/>
+                                </items>
+                            </toolbar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter a URL... EX. www.tumblr.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vMx-hJ-9Y9">
+                                <rect key="frame" x="0.0" y="64" width="414" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="MYV-uT-X3E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="editingTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="EoW-6Z-IFn"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vMx-hJ-9Y9" firstAttribute="trailing" secondItem="KS5-Yq-AOO" secondAttribute="trailing" id="2Hd-S7-0ci"/>
+                            <constraint firstItem="KS5-Yq-AOO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="2O3-i7-3eU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0tp-hV-5IQ" secondAttribute="bottom" id="3kf-K9-acd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uas-IW-sAs" secondAttribute="trailing" constant="-20" id="4b0-v0-0HS"/>
+                            <constraint firstItem="vMx-hJ-9Y9" firstAttribute="leading" secondItem="KS5-Yq-AOO" secondAttribute="leading" id="KT3-Ah-w7b"/>
+                            <constraint firstItem="Uas-IW-sAs" firstAttribute="top" secondItem="KS5-Yq-AOO" secondAttribute="bottom" constant="46" id="VEN-Yi-IZp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0tp-hV-5IQ" secondAttribute="trailing" constant="-20" id="WVi-Fw-xap"/>
+                            <constraint firstItem="Uas-IW-sAs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="ehy-7R-S6n"/>
+                            <constraint firstItem="vMx-hJ-9Y9" firstAttribute="top" secondItem="KS5-Yq-AOO" secondAttribute="bottom" id="jge-xT-iZa"/>
+                            <constraint firstItem="KS5-Yq-AOO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="krx-Ow-R2m"/>
+                            <constraint firstItem="0tp-hV-5IQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="lm0-S0-LcQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KS5-Yq-AOO" secondAttribute="trailing" constant="-20" id="ptb-5p-ghD"/>
+                            <constraint firstItem="0tp-hV-5IQ" firstAttribute="top" secondItem="Uas-IW-sAs" secondAttribute="bottom" id="qWA-Id-zKN"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="urlinput" destination="vMx-hJ-9Y9" id="1VQ-O0-epx"/>
+                        <outlet property="webView" destination="Uas-IW-sAs" id="Iat-Cy-itX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="250"/>
+        </scene>
+    </scenes>
+</document>
